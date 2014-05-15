@@ -1,6 +1,7 @@
-# TTC Angular Application 
+# Simple TTC App
 
-A simple static angular application built with ui-router, underscore and gulp.
+A simple static angular application built with ui-router, underscore and gulp
+to help residents of Toronto learn Angular and to use the local transit system.
 
 The application makes use of the handy myttc.ca API.
 
