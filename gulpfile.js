@@ -16,7 +16,7 @@ gulp.task('copy-html-files', function() {
 gulp.task('usemin', function() {
   gulp.src('./app/index.html')
     .pipe(usemin({
-      css: [minifyCss(), 'concat'],
+      css: [minifyCss(), 'concat', rev()],
       js: [uglify(), rev()]
     }))
     .pipe(gulp.dest('build/'));
