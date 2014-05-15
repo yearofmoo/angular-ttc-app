@@ -5,6 +5,10 @@ to help residents of Toronto learn Angular and to use the local transit system.
 
 The application makes use of the handy myttc.ca API.
 
+## Working Demo
+
+http://yom.nu/ttc-app
+
 ## Installation
 
 1. Clone from https://github.com/yearofmoo/angular-ttc-app.git
@@ -22,3 +26,5 @@ Run `gulp build`. The contents will be created inside of `build/`.
 ## Slides
 
 The slides are available for this application at:
+
+http://yom.nu/ttc-app-slides
