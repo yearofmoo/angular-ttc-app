@@ -11,9 +11,8 @@ viewsModule.controller('NearMeCtrl', ['$scope', 'geolocation', 'ttcNearby',
   $scope.loading = true;
 
   geolocation.getLocation().then(function(data) {
-    ttcNearby(data.coords.latitude, data.coords.longitude).then(function(results) {
-      $scope.stations = results ? results.locations : [];
-      $scope.loading = false;
-    }); 
+    //perform a search using ttcNearby() to load the data
+    //$scope.stations = ...
+    //$scope.loading = false;
   });
 }]);

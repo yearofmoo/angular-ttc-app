@@ -2,15 +2,11 @@
 
   <h1>Nearby Subway/Streetcar/Bus Stops ({{ stations.length || 0 }})</h1>
   <div ng-if="loading">
-    Loading...
+    <!-- show the loading message when the API is being queried... -->
   </div>
 
   <div class="six columns" ng-if="!loading">
-    <div ng-repeat="station in stations">
-      <h2>
-        <a ng-href="#!/stations/{{ station.uri }}">{{ station.name }}</a>
-      </h2>
-    </div>
+    <!-- list the nearby stations -->
   </div>
 
 </div>

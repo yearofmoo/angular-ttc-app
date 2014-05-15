@@ -38,6 +38,8 @@ viewsModule.controller('StationCtrl', ['$scope', 'station', 'isSubwayStop', 'isV
   this.name = station.name;
 
   this.stops = _.filter(station.stops, isValidStop);
-  this.subwayStops = _.filter(this.stops, isSubwayStop);
-  this.busStops = _.reject(this.stops, isSubwayStop);
+
+  //use isSubwayStop to filter stops for the subway and bus
+  this.subwayStops = [];
+  this.busStops = [];
 }])

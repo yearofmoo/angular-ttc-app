@@ -25,15 +25,5 @@
 </div>
 
 <div class="tcc-detail-panel">
-  <div ng-repeat="stop in station.stops" class="ttc-stop-listing">
-    <div ng-repeat="route in stop.routes">
-      <h2 id="{{ parameterize(route.name) }}">{{ route.name }}</h2>
-      <div ng-repeat="stop_time in route.stop_times" class="ttc-stop-route-listing">
-        <span class="title">{{ stop_time.shape }}</span>
-        <time class="label info" datetime="{{ stop_time.departure_timestamp }}">
-          {{ stop_time.departure_timestamp * 1000 | date:'mediumTime' }}
-        </time>
-      </div>
-    </div>
-  </div>
+  <!-- display all the stops and route times -->
 </div>
