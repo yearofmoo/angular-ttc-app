@@ -1,4 +1,4 @@
-viewsModule.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+viewsModule.config(['$stateProvider', function($stateProvider) {
   $stateProvider.state("home", {
                   url : "/",
                   templateUrl : "./home/home.html",
