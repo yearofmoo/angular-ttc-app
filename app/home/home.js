@@ -11,6 +11,10 @@ viewsModule.controller('HomeCtrl', ['$scope', 'ttcStations', function($scope, tt
     $scope.yongeLineStations = stations;
   });
 
+  ttcStations('sheppard_line').then(function(stations) {
+    $scope.sheppardLineStations = stations;
+  });
+
   ttcStations('bloor_line').then(function(stations) {
     $scope.bloorLineStations = stations;
   });

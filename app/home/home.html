@@ -10,6 +10,15 @@
   </div>
 
   <div class="six columns">
+    <h1>Sheppard Line</h1>
+    <div ng-repeat="station in sheppardLineStations">
+      <h2>
+        <a ng-href="#!/stations/{{ station.id }}">{{ station.title }}</a>
+      </h2>
+    </div>
+  </div>
+
+  <div class="six columns">
     <h1>Bloor Line</h1>
     <div ng-repeat="station in bloorLineStations">
       <h2>
