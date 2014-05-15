@@ -1,0 +1,13 @@
+<div class="container row">
+
+  <h1>Busses &amp; Streetcars</h1>
+
+  <div class="six columns">
+    <div ng-repeat="bus in busses">
+      <h2>
+        <a ng-href="#!/stations/{{ bus.id }}">{{ bus.title }}</a>
+      </h2>
+    </div>
+  </div>
+
+</div>
