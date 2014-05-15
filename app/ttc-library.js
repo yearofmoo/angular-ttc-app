@@ -1,6 +1,6 @@
 angular.module('ttcLibrary', [])
 
-  .constant('TTC_API_PREFIX', 'http://myttc.ca')
+  .constant('TTC_API_PREFIX', '//myttc.ca')
   .constant('TTC_API_SUFFIX', '?callback=JSON_CALLBACK')
   .constant('TTC_LAT_LNG_PATH', '/near/{{ lat }},{{ lng }}')
   .constant('TTC_STATION_PATH', '/{{ station }}')
