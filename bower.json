@@ -1,0 +1,12 @@
+{
+  "name": "ttc-app",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular-ui-router": "~0.2.10",
+    "angular": "~1.2.16",
+    "angular-animate": "~1.2.16",
+    "jquery": "~2.1.1",
+    "gumby": "~2.6.3",
+    "underscore": "~1.6.0"
+  }
+}

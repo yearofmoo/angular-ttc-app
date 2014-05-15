@@ -1,0 +1,58 @@
+/* C00014 */
+.row, .container {
+  width:auto!important;
+  min-width:auto!important;
+  max-width:100%!important;
+}
+
+.ttc-body {
+  height:100%;
+  position:relative;
+}
+.ttc-navigation {
+  z-index:100;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  margin-bottom:0;
+}
+.ttc-view {
+  position:relative;
+  min-height:100%;
+  padding:70px 20px 20px;
+}
+.tcc-detail-panel {
+  border-left:1px solid #ddd;
+  padding-left:20px;
+  background:#eee;
+  position:absolute;
+  top:60px;
+  padding-top:20px;
+  right:0;
+  left:50%;
+  bottom:0;
+  overflow:auto;
+}
+.ttc-stop-listing {
+  margin-bottom:20px;
+}
+.ttc-stop-route-listing {
+  overflow:auto;
+  padding:8px 0;
+}
+.ttc-stop-route-listing + .ttc-stop-route-listing {
+  border-top:1px solid #ddd;
+}
+.ttc-stop-route-listing time {
+  float:right;
+  margin-right:20px;
+  font-weight:bold;
+}
+
+@media (max-width: 600px) {
+  .tcc-detail-panel {
+    margin-top:20px;
+    position:static;
+  }
+}

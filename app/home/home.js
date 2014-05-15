@@ -1,0 +1,17 @@
+viewsModule.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+  $stateProvider.state("home", {
+                  url : "/",
+                  templateUrl : "./home/home.html",
+                  controller : 'HomeCtrl'
+                })
+}]);
+
+viewsModule.controller('HomeCtrl', ['$scope', 'ttcStations', function($scope, ttcStations) {
+  ttcStations('yonge_line').then(function(stations) {
+    $scope.yongeLineStations = stations;
+  });
+
+  ttcStations('bloor_line').then(function(stations) {
+    $scope.bloorLineStations = stations;
+  });
+}]);

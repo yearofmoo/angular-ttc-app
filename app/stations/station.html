@@ -1,0 +1,39 @@
+<h1>{{ station.name }}</h1>
+
+<div ng-if="station.busStops.length">
+  <h2>Bus / Streetcar Stops</h2>
+  <div ng-repeat="stop in station.busStops">
+    <div ng-repeat="route in stop.routes">
+      <h4>
+        <a href="" ng-click="jumpTo(parameterize(route.name))">
+        - {{ route.name }}
+        </a>
+      </h4>
+    </div>
+  </div>
+</div>
+
+<div ng-if="station.subwayStops.length">
+  <h2>Subway Stops</h2>
+  <div ng-repeat="stop in station.subwayStops">
+    <h4>
+      <a href="" ng-click="jumpTo(parameterize(stop.routes[0].name))">
+        - {{ stop.name }}
+      </a>
+    </h4>
+  </div>
+</div>
+
+<div class="tcc-detail-panel">
+  <div ng-repeat="stop in station.stops" class="ttc-stop-listing">
+    <div ng-repeat="route in stop.routes">
+      <h2 id="{{ parameterize(route.name) }}">{{ route.name }}</h2>
+      <div ng-repeat="stop_time in route.stop_times" class="ttc-stop-route-listing">
+        <span class="title">{{ stop_time.shape }}</span>
+        <time class="label info" datetime="{{ stop_time.departure_timestamp }}">
+          {{ stop_time.departure_timestamp * 1000 | date:'mediumTime' }}
+        </time>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="container row">
+
+  <div class="six columns">
+    <h1>Yonge Line</h1>
+    <div ng-repeat="station in yongeLineStations">
+      <h2>
+        <a ng-href="#!/stations/{{ station.id }}">{{ station.title }}</a>
+      </h2>
+    </div>
+  </div>
+
+  <div class="six columns">
+    <h1>Bloor Line</h1>
+    <div ng-repeat="station in bloorLineStations">
+      <h2>
+        <a ng-href="#!/stations/{{ station.id }}">{{ station.title }}</a>
+      </h2>
+    </div>
+  </div>
+
+</div>

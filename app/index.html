@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en' ng-app="ttcApp">
+<head>
+<!-- build:css1 ./_assets/combined.css -->
+<link rel="stylesheet" type="text/css" href="./bower_components/gumby/css/gumby.css" />
+<link rel="stylesheet" type="text/css" href="./ttc-app.css" />
+<!-- endbuild -->
+<meta charset='UTF-8' />
+<title>Hello</title>
+</head>
+
+<body class="ttc-body">
+  <div class="navbar ttc-navigation">
+    <ul>
+      <li><a href="#!/">Subway Stations</a></li>
+      <li><a href="#!/">Near Me</a></li>
+    </ul>
+  </div>
+
+  <div class="ttc-view" ui-view></div>
+  
+<!-- build:js1 ./_assets/combined.js -->
+<script type="text/javascript" src="./bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="./bower_components/underscore/underscore.js"></script>
+<script type="text/javascript" src="./bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="./bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script type="text/javascript" src="./bower_components/angular-animate/angular-animate.js"></script>
+<script type="text/javascript" src="./ttc-library.js"></script>
+<script type="text/javascript" src="./ttc-app-views.js"></script>
+<script type="text/javascript" src="./home/home.js"></script>
+<script type="text/javascript" src="./stations/station.js"></script>
+<script type="text/javascript" src="./ttc-app.js"></script>
+<!-- endbuild -->
+</body>
+</html>

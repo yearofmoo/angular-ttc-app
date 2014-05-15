@@ -1,0 +1,42 @@
+{
+  "bloor_line" : [
+    { "id" : "bloor-yonge_station", "title" : "Bloor-Yonge Station" },
+    { "id" : "castle_frank_station", "title" : "Castle Frank Station" }
+  ],
+  "yonge_line" : [
+    { "id" : "finch_station", "title" : "Finch Station" },
+    { "id" : "north_york_centre_station", "title" : "North York Centre Station" },
+    { "id" : "york_mills_station", "title" : "York Mills Station" },
+    { "id" : "sheppard-yonge_station", "title" : "Sheppard-Yonge Station" },
+    { "id" : "lawrence_station", "title" : "Lawrence Station" },
+    { "id" : "eglinton_station", "title" : "Eglinton Station" },
+    { "id" : "davisville_station", "title" : "Davisville Station" },
+    { "id" : "st_clair_station", "title" : "ST Clair Station" },
+    { "id" : "summerhill_station", "title" : "Summerhill Station" },
+    { "id" : "rosedale_station", "title" : "Rosedale Station" },
+    { "id" : "bloor-yonge_station", "title" : "Bloor-Yonge Station" },
+    { "id" : "wellesley_station", "title" : "Wellesley Station" },
+    { "id" : "college_station", "title" : "College Station" },
+    { "id" : "dundas_station", "title" : "Dundas Station" },
+    { "id" : "queen_station", "title" : "Queen Station" },
+    { "id" : "king_station", "title" : "King Station" },
+    { "id" : "union_station", "title" : "Union Station" },
+    { "id" : "st_andrew_station", "title" : "St Andrew Station" },
+    { "id" : "osgoode_station", "title" : "Osgoode Station" },
+    { "id" : "st_patrick_station", "title" : "St Patrick Station" },
+    { "id" : "queens_park_station", "title" : "Queens Park Station" },
+    { "id" : "museum_station", "title" : "Museum Station" },
+    { "id" : "st_george_station", "title" : "St George Station" },
+    { "id" : "spadina_station", "title" : "Spadina Station" },
+    { "id" : "dupont_station", "title" : "Dupont Station" },
+    { "id" : "st_clair_west_station", "title" : "St Clair West Station" },
+    { "id" : "eglinton_west_station", "title" : "Eglinton West Station" },
+    { "id" : "lawrence_west_station", "title" : "Lawrence West Station" },
+    { "id" : "glencairn_station", "title" : "Glencairn Station" },
+    { "id" : "lawrence_west_station", "title" : "Lawrence West Station" },
+    { "id" : "glencairn_station", "title" : "Glencairn Station" },
+    { "id" : "yorkdale_station", "title" : "Yorkdale Station" },
+    { "id" : "wilson_station", "title" : "Wilson Station" },
+    { "id" : "downsview_station", "title" : "Downsview Station" }
+  ]
+}
