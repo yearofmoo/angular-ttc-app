@@ -56,3 +56,10 @@
     position:static;
   }
 }
+.ttc-searcher {
+  width:100%;
+  box-sizing:border-box;
+  font-size:20px;
+  padding:10px;
+  border:2px solid #999;
+}

@@ -1,8 +1,9 @@
+<input type="text" class="ttc-searcher" placeholder="Filter Subway Stations" ng-model="search" />
 <div class="container row">
 
   <div class="six columns">
     <h1>Yonge Line</h1>
-    <div ng-repeat="station in yongeLineStations">
+    <div ng-repeat="station in yongeLineStations | filter:search">
       <h2>
         <a ng-href="#!/stations/{{ station.id }}">{{ station.title }}</a>
       </h2>
@@ -11,7 +12,7 @@
 
   <div class="six columns">
     <h1>Sheppard Line</h1>
-    <div ng-repeat="station in sheppardLineStations">
+    <div ng-repeat="station in sheppardLineStations | filter:search">
       <h2>
         <a ng-href="#!/stations/{{ station.id }}">{{ station.title }}</a>
       </h2>
@@ -20,7 +21,7 @@
 
   <div class="six columns">
     <h1>Bloor Line</h1>
-    <div ng-repeat="station in bloorLineStations">
+    <div ng-repeat="station in bloorLineStations | filter:search">
       <h2>
         <a ng-href="#!/stations/{{ station.id }}">{{ station.title }}</a>
       </h2>
